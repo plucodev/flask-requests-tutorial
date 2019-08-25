@@ -8,7 +8,7 @@ print(r.status_code)
 print(r.json)
 
 
-r = requests.get('hhttps://api.github.com/users/plucodev', stream=True)
+r = requests.get('https://api.github.com/users/plucodev', stream=True)
 for line in r.iter_lines():
     if line:
         print(json.loads(line))
